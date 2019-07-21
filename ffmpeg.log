@@ -1,0 +1,34 @@
+ffmpeg version 4.1.4 Copyright (c) 2000-2019 the FFmpeg developers
+  built with Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/4.1.4_1 --enable-shared --enable-pthreads --enable-version3 --enable-avresample --cc=clang --host-cflags='-I/Library/Java/JavaVirtualMachines/adoptopenjdk-12.0.1.jdk/Contents/Home/include -I/Library/Java/JavaVirtualMachines/adoptopenjdk-12.0.1.jdk/Contents/Home/include/darwin' --host-ldflags= --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libbluray --enable-libmp3lame --enable-libopus --enable-librubberband --enable-libsnappy --enable-libtesseract --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librtmp --enable-libspeex --enable-videotoolbox --disable-libjack --disable-indev=jack --enable-libaom --enable-libsoxr
+  libavutil      56. 22.100 / 56. 22.100
+  libavcodec     58. 35.100 / 58. 35.100
+  libavformat    58. 20.100 / 58. 20.100
+  libavdevice    58.  5.100 / 58.  5.100
+  libavfilter     7. 40.101 /  7. 40.101
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  3.100 /  5.  3.100
+  libswresample   3.  3.100 /  3.  3.100
+  libpostproc    55.  3.100 / 55.  3.100
+[avfoundation @ 0x7fbae9800000] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, avfoundation, from '0':
+  Duration: N/A, start: 16659.996333, bitrate: N/A
+    Stream #0:0: Video: rawvideo (UYVY / 0x59565955), uyvy422, 1920x1080, 1000k tbr, 1000k tbn, 1000k tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[mp4 @ 0x7fbaea817400] Frame rate very high for a muxer not efficiently supporting it.
+Please consider specifying a lower framerate, a different muxer or -vsync 2
+[libx264 @ 0x7fbae90fbe00] MB rate (8160000000) > level limit (16711680)
+[libx264 @ 0x7fbae90fbe00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x7fbae90fbe00] profile High, level 6.2
+[libx264 @ 0x7fbae90fbe00] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'recording.mp4':
+  Metadata:
+    encoder         : Lavf58.20.100
+    Stream #0:0: Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 1920x1080, q=-1--1, 1000k fps, 1000k tbn, 1000k tbc
+    Metadata:
+      encoder         : Lavc58.35.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+More than 1000 frames duplicated
